@@ -1,0 +1,62 @@
+.header {
+	
+	p {
+		text-align: center;
+		padding: 1vh 0 0;
+		font-size: 14vh;
+		font-family: $main-font;
+		color: $main-colour;
+        font-weight: 500;
+	}
+	
+	&-social {
+		max-width: 20vw;
+		margin: 0 auto;
+		max-height: 5vh;
+		
+		a {
+			max-height: 5vh;
+			max-width: 5vw;
+		}
+		
+		a svg {
+			float: left;
+			display: inline-block;
+			max-width: 3vw;
+			max-height: 3vh;
+			margin: 2vh 1vw 0;
+            
+            path {
+                fill: $main-colour;
+            }
+		}
+		
+		a:nth-child(1) svg:hover {
+			path {
+				@include transition(fill 0.2s ease-in-out);
+				fill: #3b5998;
+			}
+		}
+		
+		a:nth-child(2) svg:hover {
+			path {
+				@include transition(fill 0.2s ease-in-out);
+				fill: #0077b5;
+			}
+		}
+		
+		a:nth-child(3) svg:hover {
+			path {
+				@include transition(fill 0.2s ease-in-out);
+				fill: #dc4e41;
+			}
+		}
+        
+        a:nth-child(4) svg:hover {
+			path {
+				@include transition(fill 0.2s ease-in-out);
+				fill: #DCA04C;
+			}
+		}
+	}
+}

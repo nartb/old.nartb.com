@@ -1,0 +1,88 @@
+.content {
+	
+	&-section {
+		
+		a:nth-child(1) .content-section-card {
+			margin: 8vh 5% 4vh 20%;
+			
+			&:hover {
+				//background-color: #e52d27;
+			}
+		}
+		
+		a:nth-child(2) .content-section-card {
+			margin: 8vh 20% 4vh 5%;
+			
+			&:hover {
+				//background-color: #ff0084;
+			}
+		}
+		
+		a:nth-child(3) .content-section-card {
+			margin: 4vh 5% 7.5vh 20%;
+			
+			&:hover {
+				//background-color: #00ab6b;
+			}
+		}
+		
+		a:nth-child(4) .content-section-card {
+			margin: 4vh 20% 7.5vh 5%;
+			
+			&:hover {
+				//background-color: #1769ff;
+			}
+		}
+			
+		&-card {
+			width: 25%;
+			height: 35%;
+			background-color: $main-colour;
+			display: flex;
+			float: left;
+			// box-shadow: 0 -0.2vh 0 #e5e5e5, 0 0 0.4vh rgba(0, 0, 0, 0.12), 0 0.4vh 0.8vh rgba(0, 0, 0, 0.24);
+			@include transition(all 0.2s ease-in-out);
+			
+			&-content {
+				height: 50%;
+				width: 100%;
+				margin: auto;
+				position: relative;
+				
+				img, svg {
+					max-width: 60%;
+					max-height: 60%;
+					display: block;
+					margin: 0 auto;
+				}
+                
+                svg {
+                    @include transition(all 0.2s ease-in-out);
+                    path, rect {
+                        @include transition(all 0.2s ease-in-out);
+                        fill: $background-colour;
+                    }
+                }
+				
+				p {
+					bottom: 0;
+					position: absolute;
+					text-align: center;
+					text-decoration: none;
+					width: 100%;
+					color: $background-colour;
+					font-size: 4vh;
+					font-family: $main-font;
+                    font-weight: 500;
+                    @include transition(all 0.2s ease-in-out);
+				}
+			}
+			
+			&:hover {
+				transform: scale(1.02);
+			}
+			
+		}
+		
+	}
+}

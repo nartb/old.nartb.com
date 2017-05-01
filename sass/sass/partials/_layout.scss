@@ -1,0 +1,50 @@
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	background-color: $background-colour;
+    @include transition(all 0.2s ease-in-out);
+}
+
+.header {
+	height: 20%;
+	width: 68%;
+}
+
+.content {
+	height: 80%;
+	
+	&-section {
+		height: 100%;
+		display: inline-block;
+		float: left;
+	}
+	
+	#works {
+		width: 68%;
+		margin: 0 2% 0 0;
+	}
+	
+	#projects {
+		width: 30%;
+	}
+}
+
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 0.5vw;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0)
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 0.5vw;
+    border-radius: 0.5vw;
+    background: #8A8A8A; 
+}
